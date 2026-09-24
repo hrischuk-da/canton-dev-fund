@@ -9,11 +9,11 @@
 | Proposal Type | RFP-aligned |
 | RFP / Roadmap Area | RFP 20 — Indexers (Developer Experience, Tooling & Education) |
 | Champion | Curtis Hrischuk |
-| Total Funding Request | 1,050,000 CC |
+| Total Funding Request | 5,280,000 CC |
 | Project Duration | Approximately 8 months |
 | Label | daml-tooling |
 | Approved |  |
-| PR |  |
+| PR | 752 |
 
 ---
 
@@ -21,7 +21,9 @@
 
 This proposal is to open-source the [Daml Shell](https://docs.canton.network/sdks-tools/cli-tools/daml-shell#daml-shell), a high-performance REPL and forensic investigation tool for Canton 3 ledgers. Built on the Participant Query Store (PQS), the Daml Shell enables validator operators and dApp teams to perform historical root-cause analysis and inspection.  These are necessary capabilities to diagnose development or production issues like stalled continuations, unexpected delegations, and automation errors. Unlike public block explorers, Daml Shell uniquely queries both Global and Dedicated Synchronizer data from PQS, serving as a critical diagnostic tool for institutional multi-synchronizer workloads.
 
-This grant covers the transition to an open-source model. It seeks 1,050,000 Canton Coin (CC) over approximately 8 months. Most of that time allows new adoption to occur and be recorded.
+Daml Shell is already developed, available for download, and in production use today. Digital Asset distributes it under a free, no-cost proprietary license, and at least 9 ecosystem teams already use it regularly. We are offering to relicense it as OSS under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+This grant covers the transition to an open-source model. It seeks 5,280,000 Canton Coin (CC) over approximately 8 months. Most of that time allows new adoption to occur and be recorded.
 
 Ongoing maintenance and major architectural upgrades are out of scope for this grant and will be addressed through separate funding proposals.
 
@@ -121,7 +123,7 @@ The transition to open source will have no impact on the Daml Shell's existing f
 - Build and test logs are provided
 - Verified inclusion of the Daml Shell in an official Daml SDK minor release
 
-## M2: Five additional ecosystem teams adopt the Daml Shell in development or production
+## M2: Ecosystem adoption of the Daml Shell reaches ten teams
 
 | Field | Value |
 | :---- | :---- |
@@ -131,20 +133,22 @@ The transition to open source will have no impact on the Daml Shell's existing f
 
 **Deliverables / Value Metrics:**
 
-- At least five **additional** PQS users adopt the Daml Shell in development or production, after M1 is delivered.
+- The total number of ecosystem teams using the Daml Shell in development or production reaches at least 10, counting the existing teams.
 
 **Acceptance Criteria:**
 
-- Signed attestations from the adopting validator operators or dApp teams, published technical case studies, or verifiable deployment configurations.
+- Signed attestations from adopting validator operators or dApp teams, published technical case studies, or verifiable deployment configurations, covering at least 10 teams in total.
 
 # Funding
 
-**Total Funding Request: 1,050,000 Canton Coin (CC).**
+**Total Funding Request: 5,280,000 Canton Coin (CC).**
+
+This reflects both the effort already invested in developing the Daml Shell and the work required to prepare it for open-source release and support its adoption across the ecosystem.
 
 | Milestone | Amount (CC) | Trigger |
 | :---- | :---- | :---- |
-| M1 — Daml Shell as a common good | 300,000 | Committee acceptance of the OSS repository |
-| M2 — Ecosystem adoption | 750,000 | Verification of five users adopting the Daml Shell who were not users prior to Milestone 1 being achieved |
+| M1 — Daml Shell as a common good | 1,510,000 | Committee acceptance of the OSS repository |
+| M2 — Ecosystem adoption | 3,770,000 | Verification that total ecosystem adoption of the Daml Shell (existing and new) reaches at least 10 teams |
 
 ## Maintenance
 
